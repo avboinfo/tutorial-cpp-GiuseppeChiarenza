@@ -11,8 +11,11 @@ class Bicicletta {
     string colore;
     Bicicletta( int r, string c ) {
         raggio=r;
-        colore=c;
+        colore="c";
     }
+     Bicicletta( ) {
+        raggio=10;
+        colore="nero";
     void presentati() {
         cout << "Buongiorno, sono una bici di colore " << colore << " e con le ruote " << raggio << "!" << endl;
     }
@@ -20,8 +23,8 @@ class Bicicletta {
 
 int main()
 {
-    Bicicletta x(16,"verdino");
-    Bicicletta y(14,"rossastro");
+    Bicicletta x;
+    Bicicletta y(12,"rossa");
 
     x.presentati();
     y.presentati();
