@@ -56,7 +56,7 @@ private:
         for (int i = 0; i < DIM_GIOCATA_VALIDA; i++)
         {
             codice_segreto[i] = rand() % 10;
-            std::cout << codice_segreto[i];
+            
         }        
         std::cout << std::endl;
     }
@@ -160,11 +160,11 @@ public:
     }
     
     bool puoi_continuare(){
-        
-    }
-
-    void situazione_finale(){
-            
+        if (numero_mosse<=NUMERO_MOSSE_CONSENTITE)
+        {
+            return true;
+        }
+        return false;
     }
 
 

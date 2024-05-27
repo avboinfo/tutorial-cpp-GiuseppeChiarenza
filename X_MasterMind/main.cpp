@@ -12,17 +12,17 @@ int main(int argc, char const *argv[])
     cout << "Benvenuto al gioco mastermind!" << endl;
 
     prova.nuova_giocata();
-    prova.risultato_mossa_bis();
+    prova.risultato_mossa();
 
-    /*
+    
     do{
         prova.nuova_giocata();
         prova.risultato_mossa();
     }while (prova.puoi_continuare());
     
-    prova.situazione_finale();
+    /*prova.situazione_finale();*/
 
-    */
+    
 
     return 0;
 }
